@@ -1,0 +1,344 @@
+body{
+    margin:0 ; padding:0;
+}
+
+.headermain{
+    width :100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+.logo{
+    margin : 2%;
+    width: 6%;
+    min-width : 30px;   
+    max-width: 40px;
+}
+.imagelogo{
+    width: 100%;
+    height: auto;    
+}
+ul.menuprincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 300px;
+    list-style-type: none;
+    font-family: Raleway;
+    font-size: 0.8em;
+    margin-right: 20px;
+
+}
+
+.hebergement, .sinscrire{
+    color: blue; 
+}
+
+.hebergement:hover, .activites:hover, .sinscrire:hover {
+    border-top: blue 0.1em solid;
+    cursor: pointer;
+}
+
+
+h1 {
+    width: 100%;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 0.7em;
+    margin : 0;
+    padding: 0;
+    margin-left: 2%;
+
+}
+h2 {
+    width: 100%;
+    display : inline-block;
+    font-family: Raleway light;
+    font-size: 0.5em;
+    margin: 0 2%;
+}
+
+.iconmap img{
+    height: 13px;
+    padding: 5px 10px 5px 10px;
+    margin: 0 0 0 2%;
+    background: rgb(221, 218, 218);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    float: left;
+}
+
+.recherche {
+    height: 10px;
+    width: 80px;
+    border: rgb(221, 218, 218) 0.1em solid;
+    padding: 5px 10px 5px 10px;
+    margin: 0 0 20px 0;
+    float: inline-start;
+
+}
+.bouton{
+    display: inline;
+    background: blue;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    margin: 0;
+    color: white;
+    font-family: Raleway;
+    font-weight: bold; 
+    font-size: 0.6em;
+}
+.bouton:hover{
+    cursor: pointer;
+}
+
+nav.menufiltre{
+    margin: 0 0 0 2%;
+    padding-left: 0;  
+    
+}
+
+ol{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    padding-left: 0;
+    list-style-type: none;
+    font-family: Raleway;
+    font-size: 0.6em;
+    font-weight: bold;
+    align-items: center;
+}
+
+li.economique, li.familial, li.romantique, li.animaux{
+    height: 20px;
+    width: 100px;
+    border: rgb(221, 218, 218) 0.1em solid;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+}
+li.filtres{
+    font-family: Raleway;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.blocicone {
+    height : 110%;
+    width: 25px;
+    background: rgb(190, 222, 253);
+    border-radius: 50px;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.icone {
+    height : 40%;
+    width: auto;
+
+}
+
+
+.info{
+    font-family: Raleway light;
+    font-size: 0.5em;
+    margin: 20px 2%;    
+ 
+}
+section.mainsection  {
+
+    margin-left: 2%;
+    width: 100%;
+    height : 100%;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    align-content:space-between ;
+    align-items: center;
+
+    
+
+}
+section.bloc1{
+    background: rgb(221, 218, 218);
+    border-radius: 5px;
+    width: 50%;
+    height: 100%; 
+    margin-right: 20px; padding: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+.title {
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+
+.vignette{
+    width:150px;
+    height: 100%;
+    overflow:hidden;
+    background: white;
+    border: white solid 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0 10px 0px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    margin: 10px;
+
+}
+p {
+    margin: 10px 0 10px 0;
+    padding:0;
+}
+.blocphoto {
+    width: 150px;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0; margin: 0;
+}
+.photohebergement{
+    width: 100%;
+
+}
+.description {
+    font-family: Raleway;
+    padding-left: 10px;
+    font-size: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}  
+
+.emplacement{
+    font-weight: bold;
+}
+.soustitre{
+   
+    font-family: Raleway;
+    font-size: 0.7em;
+    font-weight: bold;
+   
+}
+aside.bloc2{
+    background: rgb(221, 218, 218);
+    border-radius: 5px;
+    width: 25%;
+    height: 330px; 
+    padding : 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+   
+}
+.vignette2{
+    width: 80%;
+    height: 100%;
+    overflow:hidden;
+    background: white;
+    border: white solid 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.blocphoto2 {
+    width: 70px;
+    height: 100%;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.photohebergement2{
+    height: 100%;
+    
+}
+.photohebergement3{
+    width: 140%;
+}
+.blocphoto3 {
+    width: 70px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    background: rgb(226, 226, 226);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+ul.menufooter{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-right: 100px;
+    list-style-type: none;
+    font-family: Raleway;
+    font-size: 0.6em;
+}
+
+li{
+    font-family: Raleway;
+    font-size: 0.6em;
+}
+section.bloc3{
+    background: gray;
+    width: 100%;
+    height: 200px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.vignette3{
+    width: 200px;
+    background: red;
+}
+.blocphoto4{
+    height: 100%;
+}
