@@ -2,7 +2,7 @@ body{
     margin:0 ; padding:0;
 }
 
-.headermain{
+.header{
     width :100%;
     height: 50px;
     display: flex;
@@ -15,33 +15,44 @@ body{
 }
 .logo{
     margin : 2%;
-    width: 6%;
-    min-width : 30px;   
-    max-width: 40px;
+    width: 10;
+    min-width : 50px;   
+    max-width: 70px;
 }
 .imagelogo{
     width: 100%;
     height: auto;    
+}
+li.hebergement, li.activites, li.sinscrire{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav.menuprincipal{
+    height: 100%;
 }
 ul.menuprincipal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    align-content: center;
     width: 300px;
+    height: 100%;
     list-style-type: none;
     font-family: Raleway;
-    font-size: 0.6em;
-    margin-right: 20px;
-
+    font-size: 0.7em;
+    margin-top: 1%;
+    margin-right: 100px;
 }
 
 .hebergement, .sinscrire{
-    color: blue; 
+    color: #0065FC; 
 }
 
 .hebergement:hover, .activites:hover, .sinscrire:hover {
-    border-top: blue 0.1em solid;
+    border-top: #0065FC 0.2em solid;
     cursor: pointer;
 }
 
@@ -50,7 +61,7 @@ h1 {
     width: 100%;
     font-family: Raleway;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 1em;
     margin : 0;
     padding: 0;
     margin-left: 2%;
@@ -58,55 +69,65 @@ h1 {
 }
 h2 {
     width: 100%;
-    display : inline-block;
     font-family: Raleway light;
-    font-size: 0.5em;
+    font-size: 0.7em;
     margin: 0 2%;
 }
-
-.iconmap img{
-    height: 13px;
-    padding: 5px 10px 5px 10px;
-    margin: 0 0 0 2%;
-    background: rgb(221, 218, 218);
+.menurecherche{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.iconmap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin-left: 2%;
+    background: #F2F2F2;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    float: left;
+    
+}
+
+.fas.fa-map-marker-alt{
+    margin: 8px;
+
 }
 
 .recherche {
-    height: 10px;
-    width: 80px;
-    border: rgb(221, 218, 218) 0.1em solid;
-    padding: 5px 10px 5px 10px;
-    margin: 0 0 20px 0;
-    float: inline-start;
-
+    height: 30px;
+    width: 160px;
+    border: #F2F2F2 0.1em solid;
 }
 .bouton{
-    display: inline;
-    background: blue;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0065FC;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 5px 10px 5px 10px;
     margin: 0;
     color: white;
     font-family: Raleway;
     font-weight: bold; 
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 .bouton:hover{
     cursor: pointer;
 }
 
 nav.menufiltre{
-    margin: 0 0 0 2%;
-    padding-left: 0;  
-    
+    margin-left: 2%;
+    padding-left: 0;
+    width: 100%;  
+
+ 
 }
 
 ol{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -114,33 +135,34 @@ ol{
     align-content: space-between;
     padding-left: 0;
     list-style-type: none;
-    font-family: Raleway;
-    font-size: 0.6em;
-    font-weight: bold;
     align-items: center;
 }
 
 li.economique, li.familial, li.romantique, li.animaux{
-    height: 20px;
-    width: 100px;
-    border: rgb(221, 218, 218) 0.1em solid;
+    height: 100%;
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight: bold;
+    border: #F2F2F2 0.1em solid;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin: 10px;
+    padding-right: 10px;
 }
 li.filtres{
+    height: 100%;
     font-family: Raleway;
-    font-size: 0.6em;
+    font-size: 1em;
     font-weight: bold;
     margin-right: 15px;
 }
 .blocicone {
-    height : 110%;
-    width: 25px;
-    background: rgb(190, 222, 253);
+    height : 35px;
+    width: 35px;
+    background: #F2F2F2;
     border-radius: 50px;
     margin-right: 8px;
     display: flex;
@@ -149,65 +171,65 @@ li.filtres{
     align-items: center;
   
 }
-.icone {
-    height : 40%;
-    width: auto;
 
+.fas{
+    color:#0065fc;
 }
-
+.grey{
+    color: #d6d5d5;
+}
+.noir{
+    color: black;
+}
 
 .info{
-    font-family: Raleway light;
-    font-size: 0.5em;
+    height: 20px;
     margin: 20px 2%;    
- 
+    display: flex;
+    flex-direction: row;
 }
 section.mainsection  {
-
-    margin-left: 2%;
-    margin-right: 2%;
     width: 100%;
     height : 100%;
     margin-top : 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    align-content: baseline;
-
 }
-section.bloc1{
-    background: rgb(221, 218, 218);
+.section1{
+    margin-left: 2%;
+    background: #F2F2F2;
     border-radius: 10px;
-    width: 60%;
+    width: 55%;
     height: 100%; 
-    margin-top: 10px;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 20px 20px 40px 20px;
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
     justify-content: center;
+    overflow: hidden;
    
 }
 .title {
-    margin-top: 10px;
-    font-size: 0.7em;
+    margin: 10px;
+    font-size: 1em;
 }
 
 .vignette{
-    width: 150px;
-    height: 100%;
+    width: 180px;
+    height: 140px;
     overflow:hidden;
     background: white;
-    border: white solid 2px;
-    border-radius: 5px;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    margin: 10px;
+
 
 }
 p {
@@ -216,9 +238,9 @@ p {
 }
 .blocphoto {
     width: 100%;
-    height: 70px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -230,31 +252,35 @@ p {
 
 }
 .description {
+    height: 60px;
     font-family: Raleway;
-    padding-left: 10px;
-    font-size: 0.5em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 0.7em;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }  
 
 .emplacement{
     font-weight: bold;
 }
-.soustitre{
-   
+
+.afficher{
     font-family: Raleway;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
+    margin: 10px;
    
 }
-aside.bloc2{
-    background: rgb(221, 218, 218);
+.aside{
+    background: #F2F2F2;
     border-radius: 10px;
-    width: 30%;
-    height: 330px; 
+    width: 25%;
+    height: 100%; 
     padding : 10px;
-    margin-left: 20px;
-    padding: 10px 10px 20px 10px;
+    margin-left: 30px;
+    padding: 20px 10px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,33 +290,54 @@ aside.bloc2{
 }
 .vignette2{
     width: 80%;
-    height: 100%;
+    height: 100px;
     overflow:hidden;
     background: white;
-    border: white solid 2px;
-    border-radius: 5px;
-    margin: 10px 0 5px 0;
+    border: white solid 3px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
-.blocphoto2 {
-    width: 70px;
-    height: 100%;
-    padding: 0; margin: 0;
+.descriptionpopulaire{
+    width: 50%;
+    height: 80%;
+    font-family: Raleway;
+    font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px;
+
+}
+.blocphotopaysage {
+    margin: 0;
+    width: 90px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     overflow: hidden;
 }
-.photohebergement2{
+.blocphotoportrait {
+    margin: 0;
+    width: 90px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.photopopulaire1, .photopopulaire2{
     height: 100%;
-    
 }
-.photohebergement3{
-    width: 140%;
+.photopopulaire3{
+    width: 100%;
 }
+
 .blocphoto3 {
     width: 70px;
     height:100%;
@@ -305,42 +352,49 @@ aside.bloc2{
    margin-bottom: 10px;
 }
 section.bloc3{
-    height: 100%;
+    height: 400px;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
 .vignetteactivites1 {
     width: 100%;
-    height: 300px;
+    height: 100%;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    background-color: rgb(226, 226, 226);
+    grid-row: 1 / 4;
+    background-color: #F2F2F2;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
 
 .vignetteactivites2 {
     width: 100%;
-    height: 170px;
+    height: 100%;
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background-color: rgb(226, 226, 226);
+    grid-row: 1 / 3;
+    background-color: #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .vignetteactivites3 {
     width: 100%;
-    height: 110px;
+    height: 100%;
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: rgb(226, 226, 226);
+    grid-row: 3 / 4;
+    background-color: #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -350,10 +404,10 @@ section.bloc3{
 
 .vignetteactivites4 {
     width: 100%;
-    height: 300px;
+    height: 100%;
     grid-column: 3 / 4;
-    grid-row: 1 / 3;
-    background-color: rgb(226, 226, 226);
+    grid-row: 1 / 4;
+    background-color: #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -363,10 +417,10 @@ section.bloc3{
 
 .vignetteactivites5 {
     width: 100%;
-    height: 170px;
+    height: 100%;
     grid-column: 4 / 5;
     grid-row: 1 / 2;
-    background-color: rgb(226, 226, 226);
+    background-color: #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -376,10 +430,10 @@ section.bloc3{
 }
 .vignetteactivites6 {
     width: 100%;
-    height: 110px;
+    height: 100%;
     grid-column: 4 / 5;
-    grid-row: 2 / 3;
-    background-color: rgb(226, 226, 226);
+    grid-row: 2 / 4;
+    background-color: #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -387,7 +441,7 @@ section.bloc3{
     justify-content: space-around;
 }
 .photoportrait {
-    height: 90%;
+    height: 100%;
     padding: 0; margin: 0;
     display: flex;
     flex-direction: row;
@@ -395,7 +449,7 @@ section.bloc3{
     overflow: hidden;
 }
 .photopaysage {
-    height: 80%;
+    height: 100%;
     padding: 0; margin: 0;
     display: flex;
     flex-direction: column;
@@ -403,7 +457,7 @@ section.bloc3{
     overflow: hidden;
 }
 .photopaysagetop {
-    height: 80%;
+    height: 100%;
     padding: 0; margin: 0;
     display: flex;
     flex-direction: column;
@@ -411,11 +465,21 @@ section.bloc3{
     overflow: hidden;
 }
 
+.descriptionactivites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+    font-family: Raleway;
+    font-size: 0.6em;
+    margin-left: 10px;
+}
+
 .footer {
     width: 100%;
     height: 100px;
-    background: rgb(226, 226, 226);
-    padding: 10px;
+    background: #F2F2F2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -434,6 +498,9 @@ ul.menufooter{
     justify-content: space-between;
 
 }
+.photoativites6{
+    height: 100%;
+}
 .menufiltre{
     font-family: Raleway;
     font-size: 0.6em;
@@ -447,13 +514,13 @@ ul.menufooter{
         margin-left: 0;
         margin-right: 0;
     }
-    aside.bloc2
+    .aside
     {
         width: 100%;
         margin: 0;
         border-radius: 0;
     }
-    section.bloc1{
+    .section1{
         width: 100%;
         background-color: white;
         display: flex;
