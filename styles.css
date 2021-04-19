@@ -373,7 +373,8 @@ p {
 .titlesection2{
    margin-bottom: 10px;
 }
-section.activites{
+
+.sectionactivites{
     height: 400px;
     margin-left: 2%;
     margin-right: 2%;
@@ -396,9 +397,7 @@ section.activites{
     flex-direction: column;
     justify-content: space-around;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-
 }
-
 .vignetteactivites2 {
     width: 100%;
     height: 100%;
@@ -572,7 +571,7 @@ ul.menufooter li{
     .vignette2{
         width: 90%;
     }
-    section.bloc3{
+    .sectionactivites{
         width: 100%;
         height: 100%;
         display: flex;
