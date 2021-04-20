@@ -70,12 +70,12 @@ h2 {
 .menurecherche{
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
+    align-content: center;
 }
 .iconmap{
+    font-size: 1.2em;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: center;
     height: 35px;
     width: 35px;
     margin-left: 2%;
@@ -85,26 +85,33 @@ h2 {
 }
 
 .fas.fa-map-marker-alt{
-    margin: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
 }
 
 .recherche {
-    height: 30px;
+    height: 32px;
     width: 20%;
     border: #F2F2F2 0.1em solid;
+}
+.fas.fa-search{
+    display: none;
 }
 .bouton{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     background: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 10px 10px 5px 10px;
+    padding: 10px;
     color: white;
     font-family: Raleway;
-    font-weight: bold; 
     font-size: 0.7em;
 }
 .bouton:hover{
@@ -156,16 +163,17 @@ li.filtres{
     margin-right: 15px;
 }
 .blocicone {
+    font-size: 1.2em;
     height : 100%;
     width: 30px;
     background: #DEEBFF;
     border-radius: 50px;
-    margin-right: 8px;
+    margin-right: 10px;
     margin-left:0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;  
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 .fas{
@@ -189,16 +197,16 @@ li.filtres{
     align-content: center;
 }
 .blociconeinfo{
+    font-size: 0.7em;
     border: #d1d1d1 0.1em solid;
     border-radius: 50px;
     height: 18px;
     width: 18px;
+    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-}
-.fas.fa-info{
-    height: 100%;
+    align-content: center; 
 }
 /* main section contenant section Hebergements et Aside */
 section.mainsection  {
@@ -550,14 +558,15 @@ ul.menufooter li{
         justify-content: space-between;
     }
     .logo{
-        width : 100%;
+        background-color: thistle;
+        width : 50%;
         position: absolute;  
         top: 30px;
         left: 20px;
 
     }
     .imagelogo{
-        width: 150px;   
+        width: 100px;   
     }
     ul.menuprincipal{
         width: 100%;
@@ -596,10 +605,9 @@ ul.menufooter li{
         margin-left: 2%;
     }
     .iconmap{
-        width: 15%;
-        height: 50px;
-        overflow: hidden;
-        padding: 0;
+        font-size: 1.2em;
+        width: 10%;
+        height: 40px;
         border-top-left-radius: 20px; border-bottom-left-radius: 20px;
         display: flex;
         flex-direction: row;
@@ -607,20 +615,34 @@ ul.menufooter li{
         align-content: center;
     }
     .bouton{
-        width: 15%;
-        height: 50px;
-        border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+        font-size: 1.2em;
+        width: 10%;
+        height: 40px;
+        border: 20px;
         padding: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-content: center;
     }
     input.recherche{
-        width: 60%;
-        height: 48px;
+        width: 50%;
+        height: 38px;
         padding: 0;
     }
+   
+    .rechercher{
+        display: none;
+    }
+    .fas.fa-search{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    
     section.mainsection{
         width: 100%;
         height: 100%;
@@ -632,13 +654,13 @@ ul.menufooter li{
         margin-left: 2%;
     }
     li.economique, li.familial, li.animaux, li.romantique{
-        height: 50px;
+        height: 40px;
         padding-right: 20px;
-        border: #DEEBFF solid 0.2em;
+        border: #F2F2F2 solid 0.2em;
 
     }
     .blocicone{
-        width: 52px;
+        width: 42px;
         height: 110%;
 
     }
@@ -695,6 +717,9 @@ ul.menufooter li{
         width: 80%;
         height: 200px;
         border-radius: 30px;
+    }
+    .blocphoto{
+        height: 120px;
     }
     .titlesection2{
         font-size: 1.5em;
