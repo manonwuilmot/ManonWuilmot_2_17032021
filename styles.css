@@ -22,9 +22,6 @@ body{
     width: 100%;
     height: auto;    
 }
-nav.menuprincipal{
-    height: 100%;
-}
 ul.menuprincipal {
     display: flex;
     flex-direction: row;
@@ -94,7 +91,7 @@ h2 {
 
 .recherche {
     height: 30px;
-    width: 160px;
+    width: 20%;
     border: #F2F2F2 0.1em solid;
 }
 .bouton{
@@ -542,42 +539,111 @@ ul.menufooter li{
 {
     body{
         width: 100%;
+        margin: 0; padding: 0;
     }
     .header{
-        height: 150px;
+        height: 200px;
         width: 100%;
+        margin: 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     .logo{
-        margin : 2%;
-        width : 100px;  
-        position: absolute; 
+        width : 100%;
+        position: absolute;  
+        top: 30px;
+        left: 20px;
+
     }
     .imagelogo{
-        width: 100%;
-        height: auto;    
+        width: 150px;   
     }
     ul.menuprincipal{
+        width: 100%;
+        height: 100px;
         font-size: 1em;
         flex-direction: row;
         flex-wrap: wrap-reverse;
         justify-content: flex-end;
-        margin-right: 0;
+        margin: 0;
+        padding: 0;
         
     }
     ul.menuprincipal li{
-        width: 100px;
-        margin: 10px;
-        text-align: end;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 20px;
+        
     }
-    
+    li.hebergement, li.activites{
+        margin-top: 30px;
+        font-size: 1em;
+        border-bottom: #F2F2F2 solid 0.2em;
+    }
+    .hebergement:hover, .activites:hover, .sinscrire:hover{
+        border-top: none;
+        border-bottom: blue solid 0.2em;
+    }
+    h1 .titreprincipal{
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-left: 2%;
+    }
+    nav.menurecherche{
+        width: 100%;
+        height: 50px;
+        margin-left: 2%;
+    }
+    .iconmap{
+        width: 15%;
+        height: 50px;
+        overflow: hidden;
+        padding: 0;
+        border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .bouton{
+        width: 15%;
+        height: 50px;
+        border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    input.recherche{
+        width: 60%;
+        height: 48px;
+        padding: 0;
+    }
     section.mainsection{
         width: 100%;
         height: 100%;
         margin: 0; padding: 0;
 
+    }
+    .filtres{
+        width: 100%;
+        margin-left: 2%;
+    }
+    li.economique, li.familial, li.animaux, li.romantique{
+        height: 50px;
+        padding-right: 20px;
+        border: #DEEBFF solid 0.2em;
+
+    }
+    .blocicone{
+        width: 52px;
+        height: 110%;
+
+    }
+    .blociconeinfo{
+        margin-left: 2%;
     }
     .aside
     {
@@ -588,17 +654,32 @@ ul.menufooter li{
         padding-bottom: 30px;
         padding-top: 20px;
     }
+    .vignette2{
+        border: white solid 0.4em;
+        width: 80%;
+        height: 150px;
+        border-radius: 30px;
+    }
+    .blocphotopaysage, .blocphotoportrait{
+        width: 40%;
+        height: 100%;
+    }
+    .photopopulaire1, .photopopulaire2,.photopopulaire3{
+        height: 100%;
+    }
+
+    .descriptionpopulaire, .description{
+        font-size: 1em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
     .title {
         height: 100%;
         font-size: 1.5em;
     }
-    .vignette2{
-        width: 80%;
-        height: 200px;
-        border-radius: 30px;
-    }
+    
     .section1{
-        background-color: black;
+        background-color: white;
         margin-left: 0;
         border-radius: 0;
         width: 100%;
@@ -610,12 +691,11 @@ ul.menufooter li{
 
     }
     .vignette{
+        border: white solid 0.4em;
         width: 80%;
         height: 200px;
         border-radius: 30px;
-     
     }
-    
     .titlesection2{
         font-size: 1.5em;
         margin-left: 20px;
@@ -636,14 +716,15 @@ ul.menufooter li{
     }
     .vignetteactivites1, .vignetteactivites2, .vignetteactivites3, .vignetteactivites4, .vignetteactivites5, .vignetteactivites6{
         width: 80%; 
-        height: 200px;
+        height: 150px;
         background-color: white;
         border-radius: 30px;
+        border: white solid 0.4em;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
         display: flex;
         flex-direction: column;
         align-content: space-between;
-        overflow: hidden;
+
     }
     .footer{
         width: 100%;
@@ -661,6 +742,7 @@ ul.menufooter li{
         height: 40px;
     }
     .soustitre{
+        margin-left: 2%;
         height: 40px;
         font-size: 1em;
         margin-top: 20px;
