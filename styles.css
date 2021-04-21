@@ -1,5 +1,6 @@
 body{
     margin:0 ; padding:0;
+    overflow-x: hidden;
 }
 
 /* Header contenant le logo et la navigation du menu principal*/
@@ -615,7 +616,7 @@ ul.menufooter li{
         font-size: 1.2em;
         width: 10%;
         height: 40px;
-        border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+        border-top-left-radius: 10px; border-bottom-left-radius: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
