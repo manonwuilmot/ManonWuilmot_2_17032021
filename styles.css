@@ -557,9 +557,175 @@ ul.menufooter li{
     font-size: 0.8em;
     font-weight: bold;
 }
+@media screen and (min-width: 451px) and (max-width: 980px){
+    body{
+        margin:0 ; padding:0;
+        overflow-x: hidden;
+    }
+    .header{
+        height: 200px;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo{
+        width : 50%;
+        position: absolute;  
+        top: 20px;
+        left: 20px;
 
-@media screen and (max-width: 450px)
-{
+    }
+    .imagelogo{
+        width: 80px;   
+    }
+    ul.menuprincipal{
+        width: 100%;
+        height: 100px;
+        font-size: 1em;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        
+    }
+    ul.menuprincipal li{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 20px;
+        
+    }
+    li.hebergement, li.activites{
+        margin-top: 30px;
+        font-size: 1em;
+        border-bottom: #F2F2F2 solid 0.2em;
+    }
+    .hebergement:hover, .activites:hover, .sinscrire:hover{
+        border-top: none;
+        border-bottom: blue solid 0.2em;
+    }
+    h1 .titreprincipal{
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-left: 2%;
+    }
+    .soustitre{
+        margin-left: 2%;
+    }
+    nav.menurecherche{
+        width: 100%;
+        height: 50px;
+        margin-left: 2%;
+    }
+    .iconmap{
+        font-size: 1.2em;
+        width: 10%;
+        height: 40px;
+        border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    .bouton{
+        font-size: 1.2em;
+        width: 10%;
+        height: 40px;
+        border: 20px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    input.recherche{
+        width: 30%;
+        height: 38px;
+        padding: 0;
+    }
+   
+    .rechercher{
+        display: none;
+    }
+    .fas.fa-search{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .filtres{
+        width: 100%;
+        margin-left: 2%;
+    }
+    li.economique, li.familial, li.animaux, li.romantique{
+        height: 40px;
+        padding-right: 20px;
+        border: #F2F2F2 solid 0.2em;
+
+    }
+    .blocicone{
+        width: 42px;
+        height: 110%;
+
+    }
+    .blociconeinfo{
+        margin-left: 2%;
+    }
+    .title, .titlesection2{
+        font-size: 1em;
+    }
+    .section1{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .vignette{
+        border: white solid 0.2em;
+        width: 40%;
+        height: 100px;
+        border-radius: 30px;
+    }
+    .blocphoto{
+        height: 120px;
+    }
+    .aside{
+        width: 30%;
+        height: 100%;
+        margin: 0;
+        margin-right: 2%;
+        padding-bottom: 55px;
+        padding-top: 30px;
+    }
+    .fas.fa-chart-line{
+        display: flex;
+        margin-right: 20px;
+    }
+    .vignette2{
+        border: white solid 0.2em;
+        width: 80%;
+        height: 100px;
+        border-radius: 30px;
+    }
+    .blocphotopaysage, .blocphotoportrait{
+        width: 40%;
+        height: 100%;
+    }
+    .photopopulaire1, .photopopulaire2,.photopopulaire3{
+        height: 100%;
+    }
+
+    .descriptionpopulaire, .description{
+        font-size: 0.6em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   
+}
+@media screen and (max-width: 450px){
     body{
         margin:0 ; padding:0;
         overflow-x: hidden;
@@ -654,8 +820,6 @@ ul.menufooter li{
         flex-direction: column;
         justify-content: center;
     }
-    
-    
     
     section.mainsection{
         width: 100%;
